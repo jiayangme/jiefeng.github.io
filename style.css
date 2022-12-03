@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(254, 202, 211);
+}
+
+/* 大容器实现水平垂直居中 */
+.slideshow {
+    position: absolute; /* 绝对定位 */
+    top: 50%;           /* 向下偏移窗口高度的50% */
+    left: 50%;          /* 向右偏移窗口长度的50% */
+    width: 700px;
+    /* 
+    由于上面的偏移位置是由当前元素的左上角决定，注释下面一句代码查看会发生什么问题，
+    下面这句代码是以当前元素的宽高向上向左移动50%，联合上面的偏移实现水平垂直居中。
+    */
+    transform: translate(-50%, -50%);
+}
+
+.slideshow .image {
+    width: 100%;
+}
+.slideshow .image>img {
+    display: block; /* 去除图片底部的空白 */
+    width: 100%;    /* 让图片的宽始终的等于父元素的宽 */
+}
+
+/* 切换按钮 */
+.slideshow .previous,
+.slideshow .next {
+    position: absolute;
+    /* 下面两句实现切换按钮垂直居中 */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font: 700 20px/2 "Arial";
+    color: white;
+    text-align: center;
+}
+.slideshow .next {
+    right: 5px; /* 将下一张按钮移到右边 */
+}
+.slideshow .previous:hover,
+.slideshow .next:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* 放置小圆点的容器，不给它设置宽度，让它可以动态添加小圆点 */
+.slideshow .dots {
+    position: absolute;
+    bottom: 20px;   /* 从底部向上偏移20px */
+    /* 下面两句让小圆点容器实现水平居中 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slideshow .dots:hover {
+    cursor: pointer;
+}
+
+/* 小圆点样式 */
+.dot {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0px 4px;
+    border-radius: 8px;
+    background-color: white;
+}
+.dot:hover {
+    cursor: pointer;
+    background-color: rgb(72, 72, 72);
+}
+/* 小圆点对应的图片被展示时，小圆点变灰 */
+.dots .selected {
+    background-color: rgb(72, 72, 72);
+}

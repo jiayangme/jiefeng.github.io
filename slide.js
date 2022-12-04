@@ -1,5 +1,5 @@
 // 定义数组常量存储图片路径，注意图片的后缀！！！
-const images = ['./image/1.png', './image/2.png', './image/3.png'];
+const images = ['./image/轮播1.png', './image/轮播2.png', './image/轮播3.png'];
 // 当前被选中的图片
 let imgNow = 0;
 // 存储定时器任务标识符

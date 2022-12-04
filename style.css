@@ -3,29 +3,183 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    background-color: rgb(254, 202, 211);
+    background-color: rgb(255, 255, 255);
 }
 
-/* 大容器实现水平垂直居中 */
+p.center {
+    text-align: right;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.home {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.view1 {
+    position: absolute;
+    left: 660px;
+    top: 1228px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 30px;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    width: 85px;
+    height: 43px;
+    color: #FFFFFF;
+    border: none;
+
+    /* TailGrids Color */
+
+    background: #4064da;
+    border-radius: 4px;
+}
+.view1:hover{
+    z-index:1;
+    background: #3056D3;
+} 
+
+.view2 {
+    position: absolute;
+    left: 231px;
+    top: 1706px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 30px;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    width: 85px;
+    height: 43px;
+    color: #FFFFFF;
+    border: none;
+
+    /* TailGrids Color */
+
+    background: #4064da;
+    border-radius: 4px;
+}
+.view2:hover{
+    z-index:1;
+    background: #3056D3;
+}  
+.view3 {
+    position: absolute;
+    left: 686px;
+    top: 2186px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 30px;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    width: 85px;
+    height: 43px;
+    color: #FFFFFF;
+    border: none;
+
+    /* TailGrids Color */
+
+    background: #4064da;
+    border-radius: 4px;
+}
+.view3:hover{
+    z-index:1;
+    background: #3056D3;
+} 
+.view4 {
+    position: absolute;
+    left: 231px;
+    top: 2654px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 30px;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    width: 85px;
+    height: 43px;
+    color: #FFFFFF;
+    border: none;
+
+    /* TailGrids Color */
+
+    background: #4064da;
+    border-radius: 4px;
+}
+.view4:hover{
+    z-index:1;
+    background: #3056D3;
+}  
+.view5 {
+    position: absolute;
+    left: 179px;
+    top: 3478px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 30px;
+    
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+
+    width: 83px;
+    height: 43px;
+    color: #FFFFFF;
+    border: none;
+
+    background: #3056D3;
+    border-radius: 4px;
+    font-weight:normal
+}
+.view5:hover{
+    z-index:1;
+    background: #0f3ed8;
+}  
 .slideshow {
-    position: absolute; /* 绝对定位 */
-    top: 50%;           /* 向下偏移窗口高度的50% */
-    left: 50%;          /* 向右偏移窗口长度的50% */
-    width: 700px;
-    /* 
-    由于上面的偏移位置是由当前元素的左上角决定，注释下面一句代码查看会发生什么问题，
-    下面这句代码是以当前元素的宽高向上向左移动50%，联合上面的偏移实现水平垂直居中。
-    */
-    transform: translate(-50%, -50%);
+    position: absolute;
+    float: left;
+    width: 598px;
+    left: 150px;
+    top: 200px;
 }
 
 .slideshow .image {
     width: 100%;
 }
+
 .slideshow .image>img {
-    display: block; /* 去除图片底部的空白 */
-    width: 100%;    /* 让图片的宽始终的等于父元素的宽 */
+    display: block;
+    /* 去除图片底部的空白 */
+    width: 100%;
+    /* 让图片的宽始终的等于父元素的宽 */
 }
 
 /* 切换按钮 */
@@ -44,9 +198,12 @@ body {
     color: white;
     text-align: center;
 }
+
 .slideshow .next {
-    right: 5px; /* 将下一张按钮移到右边 */
+    right: 5px;
+    /* 将下一张按钮移到右边 */
 }
+
 .slideshow .previous:hover,
 .slideshow .next:hover {
     cursor: pointer;
@@ -56,11 +213,13 @@ body {
 /* 放置小圆点的容器，不给它设置宽度，让它可以动态添加小圆点 */
 .slideshow .dots {
     position: absolute;
-    bottom: 20px;   /* 从底部向上偏移20px */
+    bottom: 20px;
+    /* 从底部向上偏移20px */
     /* 下面两句让小圆点容器实现水平居中 */
     left: 50%;
     transform: translateX(-50%);
 }
+
 .slideshow .dots:hover {
     cursor: pointer;
 }
@@ -72,13 +231,21 @@ body {
     height: 16px;
     margin: 0px 4px;
     border-radius: 8px;
-    background-color: white;
+    background-color: rgb(72, 72, 72);
 }
+
 .dot:hover {
     cursor: pointer;
-    background-color: rgb(72, 72, 72);
+    background-color: white;
 }
+
 /* 小圆点对应的图片被展示时，小圆点变灰 */
 .dots .selected {
-    background-color: rgb(72, 72, 72);
+    background-color: white;
+}
+.img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
 }

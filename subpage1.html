@@ -3,18 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>subpage1</title>
+    <title>subpage2</title>
     <!-- 引入外部样式文件 -->
     <link rel="stylesheet" href="./style.css">
 
 </head>
 
-<body>
-    <div class="home">
-        <p style="text-align:center">
-            <img width="1250px" src="./image/huawei.jpg">
-        </p>
-    </div>
+<body class="bodyCenter">
+    <img class="imgCenter" width="1260px" src="./image/huawei.jpg">
+    <video class="video1Center" width="1250" height="720" controls autoplay>
+        <source src="movie.ogg" type="video/ogg">
+        <source src=".\video\视频1.mp4" type="video/mp4">
+        <source src="movie.webm" type="video/webm">
+        <object data=".\video\视频1.mp4" width="320" height="240">
+            <embed width="320" height="240" src="movie.swf">
+        </object>
+    </video>
+    <video class="video1-2" width="710" height="478" controls autoplay>
+        <source src="movie.ogg" type="video/ogg">
+        <source src="./video/视频1-2.mp4" type="video/mp4">
+        <source src="movie.webm" type="video/webm">
+        <object data=".\video\视频1.mp4" width="320" height="240">
+            <embed width="320" height="240" src="movie.swf">
+        </object>
+    </video>
+    <video class="video1-3" width="710" height="478" controls autoplay>
+        <source src="movie.ogg" type="video/ogg">
+        <source src=".\video\视频1-3.mp4" type="video/mp4">
+        <source src="movie.webm" type="video/webm">
+        <object data="C" width="320" height="240">
+            <embed width="320" height="240" src="movie.swf">
+        </object>
+    </video>
 </body>
 
 </html>

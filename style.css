@@ -18,11 +18,6 @@ p.center {
     text-align: center;
 }
 
-.home {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
 
 .view1 {
     position: absolute;
@@ -261,28 +256,76 @@ p.center {
 
 .video1Center {
     position: absolute;
-    top: 1706px; 
+    top: 1706px;
     left: 50%;
     transform: translateX(-50%);
 }
+
 .video1-2 {
     position: absolute;
-    top: 5784px; 
+    top: 5784px;
     left: -490px;
 }
+
 .video1-3 {
     position: absolute;
-    top: 6308px; 
+    top: 6308px;
     left: -153px
 }
-.bodyCenter{
+
+.bodyCenter {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
 }
-.video2-1{
+
+.video2-1 {
     position: absolute;
-    top: 1608px; 
-    left: -153px
+    top: 1645px;
+    left: -554px
+}
+
+.video2-2 {
+    position: absolute;
+    top: 1645px;
+    left: 14px
+}
+
+.video2-3 {
+    position: absolute;
+    top: 2023px;
+    left: -554px
+}
+
+.video2-4 {
+    position: absolute;
+    top: 2023px;
+    left: 14px
+}
+
+.video2-5 {
+    position: absolute;
+    top: 2773px;
+    left: -574px
+}
+
+.video2-6 {
+    position: absolute;
+    top: 3541px;
+    left: -574px
+}
+
+.video3 {
+    position: absolute;
+    top: 2422px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.video4 {
+    position: absolute;
+    top: 2826px;
+    left: 50%;
+    transform: translateX(-50%);
 }

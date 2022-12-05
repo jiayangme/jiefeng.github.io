@@ -256,7 +256,7 @@ p.center {
 
 .video1Center {
     position: absolute;
-    top: 1706px;
+    top: 1722px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -282,50 +282,53 @@ p.center {
 
 .video2-1 {
     position: absolute;
-    top: 1645px;
+    top: 2345px;
     left: -554px
 }
 
 .video2-2 {
     position: absolute;
-    top: 1645px;
+    top: 2345px;
     left: 14px
 }
 
 .video2-3 {
     position: absolute;
-    top: 2023px;
+    /* top: 2023px; */
+    top: 2723px;
     left: -554px
 }
 
 .video2-4 {
     position: absolute;
-    top: 2023px;
+    top: 2723px;
     left: 14px
 }
 
 .video2-5 {
     position: absolute;
-    top: 2773px;
+    /* top: 2773px; */
+    top: 3473px;
     left: -574px
 }
 
 .video2-6 {
     position: absolute;
-    top: 3541px;
+    /* top: 3541px; */
+    top: 4241px;
     left: -574px
 }
 
 .video3 {
     position: absolute;
-    top: 2422px;
+    top: 2450px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .video4 {
     position: absolute;
-    top: 2826px;
+    top: 2825px;
     left: 50%;
     transform: translateX(-50%);
 }

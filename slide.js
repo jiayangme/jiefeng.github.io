@@ -1,5 +1,6 @@
 // 定义数组常量存储图片路径，注意图片的后缀！！！
 const images = ['./image/轮播1.png', './image/轮播2.png', './image/轮播3.png'];
+const links = ['./subpage1.html', './subpage3.html', './subpage2.html'];
 // 当前被选中的图片
 let imgNow = 0;
 // 存储定时器任务标识符
@@ -19,6 +20,7 @@ for(let i=0; i<images.length; i++) {
         dotID = this.getAttribute("id");    // 获取当前小圆点的id
         imgNow = Number(dotID.replace("dot", ""));  // 取出id里的数字
         document.getElementById("img-show").src = images[imgNow];   // 显示指定的图片
+        document.getElementById("img-link").href = links[imgNow];
         // 将所有小圆点的样式设置成默认
         for(let i=0; i<dots.length; i++) {
             dots[i].className = "dot";
@@ -87,6 +89,7 @@ function changeImage(direction) {
         }
         // 切换图片
         document.getElementById("img-show").src = images[imgNow]; 
+        document.getElementById("img-link").href = links[imgNow];
         // 将当前图片的小圆点变灰
         dots[imgNow].className = "dot selected";
     } else {
@@ -97,6 +100,7 @@ function changeImage(direction) {
             imgNow += 1;
         }
         document.getElementById("img-show").src = images[imgNow];
+        document.getElementById("img-link").href = links[imgNow];
         dots[imgNow].className = "dot selected";
     }
 }
